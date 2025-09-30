@@ -14,7 +14,7 @@ The pipeline is designed for robustness and scalability, automating the entire j
 * **Machine Learning Integration:** Leverages **AWS SageMaker Autopilot** to automatically train and optimize machine learning models on the processed data.
 * **Data Visualization:** Creates **interactive dashboards** using **AWS QuickSight** to present key business metrics and derived insights.
 ---
-### ☁️ AWS Retail Analytics Pipeline Architecture
+## ☁️ Pipeline Architecture
 
 The diagram below illustrates the end-to-end data flow, beginning with raw data ingestion and terminating with the consumption services (SageMaker and QuickSight).
 
