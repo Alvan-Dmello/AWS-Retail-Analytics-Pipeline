@@ -14,18 +14,10 @@ The pipeline is designed for robustness and scalability, automating the entire j
 * **Machine Learning Integration:** Leverages **AWS SageMaker Autopilot** to automatically train and optimize machine learning models on the processed data.
 * **Data Visualization:** Creates **interactive dashboards** using **AWS QuickSight** to present key business metrics and derived insights.
 
----
+### ☁️ AWS Retail Analytics Pipeline Architecture
 
-## 🛠️ Technology Stack
+The diagram below illustrates the end-to-end data flow, beginning with raw data ingestion and terminating with the consumption services (SageMaker and QuickSight).
 
-| Category | Tool / Language | Purpose |
-| :--- | :--- | :--- |
-| **Cloud Infrastructure** | **AWS Services (S3, SageMaker, QuickSight)** | Hosting, storage, machine learning, and business intelligence platform. |
-| **Data Processing** | **PySpark, Spark SQL** | Efficient Big Data transformation, cleaning, and complex querying. |
-| **Automation** | **Cron Jobs** | Scheduled execution of the pipeline scripts for data updates. |
-
----
-## Architecture
 ```mermaid
 graph TD
     subgraph Data Ingestion & Storage
@@ -53,6 +45,17 @@ graph TD
     style H fill:#f9f,stroke:#333;
     style I fill:#ccf,stroke:#333;
 ```
+---
+
+## 🛠️ Technology Stack
+
+| Category | Tool / Language | Purpose |
+| :--- | :--- | :--- |
+| **Cloud Infrastructure** | **AWS Services (S3, SageMaker, QuickSight)** | Hosting, storage, machine learning, and business intelligence platform. |
+| **Data Processing** | **PySpark, Spark SQL** | Efficient Big Data transformation, cleaning, and complex querying. |
+| **Automation** | **Cron Jobs** | Scheduled execution of the pipeline scripts for data updates. |
+
+
 ---
 
 ## 📁 Project Structure & Files
