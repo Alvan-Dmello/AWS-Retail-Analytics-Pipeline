@@ -23,7 +23,6 @@ The pipeline is designed for robustness and scalability, automating the entire j
 | **Cloud Infrastructure** | **AWS Services (S3, SageMaker, QuickSight)** | Hosting, storage, machine learning, and business intelligence platform. |
 | **Data Processing** | **PySpark, Spark SQL** | Efficient Big Data transformation, cleaning, and complex querying. |
 | **Automation** | **Cron Jobs** | Scheduled execution of the pipeline scripts for data updates. |
-| **Storage** | **AWS S3** | Centralized storage for raw, preprocessed, and aggregated data. |
 
 ---
 
