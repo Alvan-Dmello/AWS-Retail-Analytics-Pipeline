@@ -25,6 +25,40 @@ The pipeline is designed for robustness and scalability, automating the entire j
 | **Automation** | **Cron Jobs** | Scheduled execution of the pipeline scripts for data updates. |
 
 ---
+## Architecture
+```mermaid
+graph TD
+    % 1. Data Ingestion & Storage
+    subgraph Data Ingestion & Storage
+        A[Raw Dataset.csv] --> B(AWS S3: Raw Bucket);
+        B --> C{Cron Job Trigger};
+    end
+
+    % 2. ETL Processing (PySpark & SQL)
+    subgraph ETL Processing (PySpark & Spark SQL)
+        C --> D[PySpark ETL Script];
+        D --> E[Spark SQL Queries];
+    end
+
+    % 3. Processed Storage & Output
+    subgraph Storage & Output
+        D --> F(AWS S3: Preprocessed Bucket);
+        E --> G(AWS S3: Aggregated Data);
+    end
+
+    % 4. BI & ML Services
+    subgraph Analytics & ML
+        F --> H[AWS SageMaker Autopilot];
+        G --> I[AWS QuickSight];
+    end
+
+    % Styling to highlight key tools
+    style D fill:#ddf,stroke:#333;
+    style E fill:#ddf,stroke:#333;
+    style H fill:#f9f,stroke:#333;
+    style I fill:#ccf,stroke:#333;
+```
+---
 
 ## 📁 Project Structure & Files
 
