@@ -33,7 +33,7 @@ graph TD
         B --> C{Cron Job Trigger};
     end
 
-    subgraph ETL Processing (PySpark & Spark SQL)
+    subgraph ETL Processing PySpark & Spark SQL
         C --> D[PySpark ETL Script];
         D --> E[Spark SQL Queries];
     end
