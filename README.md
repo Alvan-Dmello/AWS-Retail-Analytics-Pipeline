@@ -28,7 +28,6 @@ The pipeline is designed for robustness and scalability, automating the entire j
 ## Architecture
 ```mermaid
 graph TD
-    % 1. Data Ingestion & Storage
     subgraph Data Ingestion & Storage
         A[Raw Dataset.csv] --> B(AWS S3: Raw Bucket);
         B --> C{Cron Job Trigger};
